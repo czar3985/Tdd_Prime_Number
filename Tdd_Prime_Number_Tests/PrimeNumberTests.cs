@@ -20,6 +20,19 @@ namespace Tdd_Prime_Number_Tests
         }
 
         [Fact]
+        public void Given_3_Then_Prime()
+        {
+            // Arrange
+            var sut = new PrimeNumberChecker();
+
+            // Act
+            var result = sut.IsPrime(3);
+
+            // Assert
+            result.Should().BeTrue();
+        }
+
+        [Fact]
         public void Given_4_Then_Not_Prime()
         {
             // Arrange
