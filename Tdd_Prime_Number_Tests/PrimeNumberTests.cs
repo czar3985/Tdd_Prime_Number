@@ -9,6 +9,7 @@ namespace Tdd_Prime_Number_Tests
         [Theory]
         [InlineData(2)]
         [InlineData(3)]
+        [InlineData(491)]
         public void Given_a_prime_number_Then_IsPrime_is_true(int input)
         {
             // Arrange
@@ -23,6 +24,8 @@ namespace Tdd_Prime_Number_Tests
 
         [Theory]
         [InlineData(4)]
+        [InlineData(6)]
+        [InlineData(334)]
         public void Given_a_non_prime_number_Then_IsPrime_is_false(int input)
         {
             // Arrange
