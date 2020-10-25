@@ -6,40 +6,30 @@ namespace Tdd_Prime_Number_Tests
 {
     public class PrimeNumberTests
     {
-        [Fact]
-        public void Given_2_Then_Prime()
+        [Theory]
+        [InlineData(2)]
+        [InlineData(3)]
+        public void Given_a_prime_number_Then_IsPrime_is_true(int input)
         {
             // Arrange
             var sut = new PrimeNumberChecker();
 
             // Act
-            var result = sut.IsPrime(2);
+            var result = sut.IsPrime(input);
 
             // Assert
             result.Should().BeTrue();
         }
 
-        [Fact]
-        public void Given_3_Then_Prime()
+        [Theory]
+        [InlineData(4)]
+        public void Given_a_non_prime_number_Then_IsPrime_is_false(int input)
         {
             // Arrange
             var sut = new PrimeNumberChecker();
 
             // Act
-            var result = sut.IsPrime(3);
-
-            // Assert
-            result.Should().BeTrue();
-        }
-
-        [Fact]
-        public void Given_4_Then_Not_Prime()
-        {
-            // Arrange
-            var sut = new PrimeNumberChecker();
-
-            // Act
-            var result = sut.IsPrime(4);
+            var result = sut.IsPrime(input);
 
             // Assert
             result.Should().BeFalse();
