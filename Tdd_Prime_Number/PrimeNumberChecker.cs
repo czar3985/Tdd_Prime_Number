@@ -4,14 +4,15 @@
     {
         public bool IsPrime(int number)
         {
-            if (number == 2)
+            // Prime Number: a number that is divisible only by itself and 1.
+            for (var divisor = 2; divisor < number; divisor++)
             {
-                return true;
+                if (number % divisor == 0)
+                {
+                    return false;
+                }
             }
-            else
-            {
-                return false;
-            }
+            return true;
         }
     }
 }
