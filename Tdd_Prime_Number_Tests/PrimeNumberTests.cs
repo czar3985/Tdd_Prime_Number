@@ -26,6 +26,9 @@ namespace Tdd_Prime_Number_Tests
         [InlineData(4)]
         [InlineData(6)]
         [InlineData(334)]
+        [InlineData(1)]
+        [InlineData(0)]
+        [InlineData(-1)]
         public void Given_a_non_prime_number_Then_IsPrime_is_false(int input)
         {
             // Arrange
