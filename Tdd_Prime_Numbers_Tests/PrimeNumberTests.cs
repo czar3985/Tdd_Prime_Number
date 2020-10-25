@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Tdd_Prime_Number_Test
+namespace Tdd_Prime_Number_Tests
 {
     public class PrimeNumberTests
     {
