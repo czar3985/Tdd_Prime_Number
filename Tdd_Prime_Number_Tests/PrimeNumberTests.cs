@@ -18,5 +18,18 @@ namespace Tdd_Prime_Number_Tests
             // Assert
             result.Should().BeTrue();
         }
+
+        [Fact]
+        public void Given_4_Then_Not_Prime()
+        {
+            // Arrange
+            var sut = new PrimeNumberChecker();
+
+            // Act
+            var result = sut.IsPrime(4);
+
+            // Assert
+            result.Should().BeFalse();
+        }
     }
 }
