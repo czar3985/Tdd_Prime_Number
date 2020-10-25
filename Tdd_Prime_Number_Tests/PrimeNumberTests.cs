@@ -1,3 +1,5 @@
+using FluentAssertions;
+using Tdd_Prime_Number;
 using Xunit;
 
 namespace Tdd_Prime_Number_Tests
