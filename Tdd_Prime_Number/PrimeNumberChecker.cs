@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tdd_Prime_Number
+﻿namespace Tdd_Prime_Number
 {
     public class PrimeNumberChecker
     {
-        public bool IsPrime()
+        public bool IsPrime(int number)
         {
-            throw new NotImplementedException();
+            if (number == 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

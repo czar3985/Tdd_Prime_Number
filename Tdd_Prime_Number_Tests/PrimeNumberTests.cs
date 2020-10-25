@@ -13,7 +13,7 @@ namespace Tdd_Prime_Number_Tests
             var sut = new PrimeNumberChecker();
 
             // Act
-            var result = sut.IsPrime();
+            var result = sut.IsPrime(2);
 
             // Assert
             result.Should().BeTrue();
