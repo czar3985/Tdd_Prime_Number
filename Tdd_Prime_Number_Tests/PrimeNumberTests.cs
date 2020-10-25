@@ -8,7 +8,7 @@ namespace Tdd_Prime_Number_Tests
         public void Given_2_Then_Prime()
         {
             // Arrange
-            var sut = new PrimeNumberService();
+            var sut = new PrimeNumberChecker();
 
             // Act
             var result = sut.IsPrime();
